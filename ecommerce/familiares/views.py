@@ -4,7 +4,7 @@ from django.shortcuts import render
 from familiares.models import Familiares
 
 def create_familiares (request):
-    nuevo_familiar= Familiares.objects.create(nombre='Cintia',apellido='Melendez',hobbie='Salir a correr y pasear el perro',edad=36)
+    nuevo_familiar= Familiares.objects.create(nombre='Cintia',apellido='Melendez',hobbie='Salir a correr y pasear el perro',edad=33)
     context={
         'nuevo_familiar':nuevo_familiar
     }
