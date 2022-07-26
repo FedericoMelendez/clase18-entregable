@@ -1,9 +1,10 @@
 from django.contrib import admin
 from django.urls import path
-from ecommerce.views import saludo_inicial,saber_lista
+from ecommerce.ecommerce.views import bienvenido
+from ecommerce.views import bienvenido_a,saber_lista
 
 urlpatterns =[
     path('admin/', admin.site.urls),
-    path ('saludo-inicial/', saludo_inicial, name='saludo-inicial'),
+    path ('bienvenido-a/', bienvenido_a, name='bienvenido-a'),
     path ('saber-lista', saber_lista, name='saber lista')
 ]

@@ -4,11 +4,11 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 
-def saludo_inicial (request):
+def bienvenido_a (request):
     return HttpResponse('Bienvenid@ !!!!')
 
 def saber_lista (request):
     return render (request, 'templates-saberlista.html',context={})
 
-    
+
 
